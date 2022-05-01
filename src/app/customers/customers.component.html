@@ -1,0 +1,57 @@
+<main>
+    <app-headeradmin></app-headeradmin>
+    
+    <div class="container-fluid h-100">
+        <div class="row h-100">
+          <aside class="col-12 col-md-2 p-0 bg-dark">
+            <nav class="navbar navbar-expand navbar-dark bg-dark flex-md-column flex-row align-items-start">
+              <div class="collapse navbar-collapse">
+                <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
+                  <li class="nav-item">
+                     <a class="nav-link pl-0" href="#">Menu 1</a>
+                  </li>
+                  <!-- Insérez ici le reste de votre menu -->            
+                </ul>
+              </div>
+            </nav>
+          </aside>
+          <main class="col">
+
+    <div class="container-fluid">
+        <h1 class="mt-4">Dashboard</h1>
+        <ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item active">List of customers</li>
+            
+        </ol>
+        <div class="row p-3">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name </th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Date of reservation</th>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="(client,index) in clients" :key="index">
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                       
+                    </tr>
+                </tbody>
+            </table>
+            <hr />
+            <div class="text-center col-md-12" v-show="moreExists">
+                <button class="btn btn-primary btn-sm" v-on:click="loadMore"><i class="fa fa-arrow-down"></i>Afficher la suite</button>
+            </div>
+            
+        </div>
+    </div>
+</main>
+</div>
+</div>
+</main>

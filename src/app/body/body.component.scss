@@ -1,0 +1,32 @@
+.cont {
+    background-color: beige;
+  }
+  .img{
+    height: 500px;
+    width: 100%;
+    background-image: url('../../assets/images/bg5.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+    .img h4{
+    font-size: 50px;
+    font-weight: 500px;
+    text-align: center;
+    color: white;
+    margin-top: -20px;
+    padding-top: 20px;
+    }
+    .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+    }
+    .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+    }

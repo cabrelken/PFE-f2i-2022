@@ -1,0 +1,144 @@
+
+<div class="container-fluid h-100">
+    <app-categories></app-categories>
+    <app-customers></app-customers>
+    <app-locations></app-locations>
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">ATYPIKHOUSE</a>
+        <button
+            class="btn btn-link btn-sm order-1 order-lg-0"
+            id="sidebarToggle"
+            href="#"
+        >
+            <i class="fas fa-bars"></i>
+        </button>
+    
+        <form
+            class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0"
+        >
+            <div class="input-group">
+                <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Search for..."
+                    aria-label="Search"
+                    aria-describedby="basic-addon2"
+                />
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    
+        <ul class="navbar-nav ml-auto ml-md-0">
+            <li class="nav-item dropdown">
+                <a
+                    class="nav-link dropdown-toggle"
+                    id="userDropdown"
+                    href="#"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    ><i class="fas fa-user fa-fw"></i
+                ><!--{{ $store.state.profile.name }}--> </a>
+                <div
+                    class="dropdown-menu dropdown-menu-right"
+                    aria-labelledby="userDropdown"
+                >
+                    
+                    <button class="dropdown-item" v-on:click="logout">Logout</button>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    
+
+
+    <div class="row h-100">
+      <aside class="col-12 col-md-2 p-0 bg-dark">
+        <nav class="navbar navbar-expand navbar-dark bg-dark flex-md-column flex-row align-items-start">
+          <div class="collapse navbar-collapse">
+            <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
+              <li class="nav-item">
+                 <a class="nav-link pl-0" href="#">Menu 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pl-0" href="#">Menu 1</a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link pl-0" href="#">Menu 1</a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link pl-0" href="#">Menu 1</a>
+             </li>
+              <!-- Insérez ici le reste de votre menu -->            
+            </ul>
+          </div>
+        </nav>
+      </aside>
+      
+      <main class="col">
+        <div class="container-fluid">
+            <h1 class="mt-4">Dashboard</h1>
+            <ol class="breadcrumb mb-4">
+                <li class="breadcrumb-item active">Dashboard</li>
+            </ol>
+    
+    
+        
+            <div class="row">
+                <div class="col-xl-3 col-md-6">
+                    <div class="card bg-primary text-white mb-4">
+                        <div class="card-body">Number of reservations</div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" href="#"> Reservations</a>
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="card bg-warning text-white mb-4">
+                        <div class="card-body">Number of customers</div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" href="#"> customers</a>
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="card bg-success text-white mb-4">
+                        <div class="card-body">Statistics</div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" href="#"> Statistics</a>
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="card bg-danger text-white mb-4">
+                        <div class="card-body">Numbers of Locations</div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" href="#"> Locations</a>
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+           
+        </div>
+    
+      </main>
+    </div>
+    
+  </div>
+  
+
+
+   
+
+
+
